@@ -15,6 +15,11 @@ void Author::addBooks(Book *books)
     books->addAuthors(this);
 }
 
+void Author::Display() const
+{
+    std::cout << *this << "\n";
+}
+
 std::ostream& operator<<(std::ostream& os, const Author& a)
 {
     os << "Author: " << a.author_name << "\n";
@@ -22,3 +27,4 @@ std::ostream& operator<<(std::ostream& os, const Author& a)
     os << "Books written: " << a.bookList.size();
     return os;
 }
+

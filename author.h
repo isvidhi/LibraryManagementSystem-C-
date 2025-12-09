@@ -18,7 +18,7 @@ public:
     Author(std::string author, std::string bio);
     void addBooks(Book* books);
     void Display() const;
-    friend std::ostream &operator<<(std::ostream& os, const Author& a);
+    friend std::ostream &operator<<(std::ostream &os, const Author &a);
 };
 
 #endif // AUTHOR_H
