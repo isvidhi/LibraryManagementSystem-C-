@@ -13,7 +13,6 @@ class Author;
 class Book {
 private:
     std::string title;
-    std::string author;
     int pages;
     std::string publication;
     std::vector<Author*> authors;
@@ -22,11 +21,11 @@ private:
 
 public:
     Book();
-    Book(const char* t, std::string a, int p);
+    Book(const char* title, int pages);
     // Book(const Book& other);
 
     // Book& operator=(const Book &other);
-    void addAuthors(Author* authors);
+    void addAuthors(Author* author);
 
     ~Book();
 
