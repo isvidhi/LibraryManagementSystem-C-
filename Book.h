@@ -2,11 +2,13 @@
 #define BOOK_H
 
 
-#include "author.h"
+// #include "author.h"
 #include <vector>
 #include <iostream>
 #include <cstring>
 #include <string>
+
+class Author;
 
 class Book {
 private:
@@ -32,7 +34,7 @@ public:
 
     static int getCount();
 
-    friend std::ostream& operator<<(std::ostream& os, const Book& b);
+    friend std::ostream &operator<<(std::ostream &os, const Book &b);
 
 };
 
